@@ -1,0 +1,45 @@
+/* 兴趣社区内容管理系统 - 原生 CSS，无框架 */
+* { box-sizing: border-box; }
+body { margin:0; font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif; background:#f4f6fa; color:#262626; line-height:1.6; }
+a { color:#2456c8; text-decoration:none; } a:hover { text-decoration:underline; }
+.container { max-width:1080px; margin:0 auto; padding:0 16px; }
+main.container { padding-top:20px; padding-bottom:32px; }
+h1 { font-size:22px; margin:8px 0 14px; } h2 { font-size:17px; margin:6px 0 10px; }
+.topbar { background:#20504a; color:#fff; }
+.nav-wrap { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; }
+.logo { color:#fff; font-size:18px; font-weight:bold; padding:12px 0; } .logo:hover { text-decoration:none; }
+.nav { display:flex; align-items:center; flex-wrap:wrap; gap:4px; }
+.nav a { color:#d9efe9; padding:8px 10px; border-radius:6px; font-size:14px; }
+.nav a:hover { background:rgba(255,255,255,.14); text-decoration:none; color:#fff; }
+.nav-user { color:#ffd966; font-size:14px; padding:8px 6px; }
+.card { background:#fff; border:1px solid #e3e7ef; border-radius:10px; padding:18px; margin-bottom:16px; box-shadow:0 1px 3px rgba(20,40,80,.05); }
+.form-card { max-width:420px; margin:30px auto; } .form-card-wide { max-width:680px; }
+label { display:block; margin:10px 0 4px; font-size:14px; color:#444; }
+input[type="text"], input[type="password"], select, textarea { width:100%; padding:9px 10px; border:1px solid #c9d1e0; border-radius:6px; font-size:14px; font-family:inherit; background:#fff; }
+textarea { resize:vertical; }
+.filter-form, .inline-form { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+.filter-form select, .filter-form input[type="text"] { width:auto; flex:1 1 160px; }
+.btn { display:inline-block; padding:8px 16px; border:1px solid #c9d1e0; border-radius:6px; background:#fff; color:#262626; font-size:14px; cursor:pointer; font-family:inherit; }
+.btn:hover { background:#eef6f3; text-decoration:none; }
+.btn-primary { background:#1f7a6d; border-color:#1f7a6d; color:#fff; } .btn-primary:hover { background:#176357; color:#fff; }
+.btn-block { width:100%; margin-top:16px; } .btn-small { padding:4px 12px; font-size:13px; }
+table { width:100%; border-collapse:collapse; font-size:14px; }
+th, td { border-bottom:1px solid #e9edf4; padding:9px 8px; text-align:left; vertical-align:top; }
+th { background:#eff6f3; color:#20504a; }
+.del-form { display:inline; margin-left:8px; }
+.link-btn { background:none; border:none; color:#c0392b; cursor:pointer; font-size:14px; padding:0; font-family:inherit; }
+.badge { display:inline-block; padding:1px 8px; border-radius:10px; background:#e0efeb; color:#20504a; font-size:12px; margin-right:6px; }
+.badge-draft { background:#fdf0d5; color:#8a6100; } .badge-banned { background:#fbe3e0; color:#a93226; }
+.flash { background:#eaf6f1; border:1px solid #bfe3d3; color:#176357; border-radius:8px; padding:10px 14px; margin-bottom:16px; }
+.error { background:#fdf0ef; border:1px solid #f0c9c4; color:#a93226; border-radius:8px; padding:10px 14px; margin-bottom:14px; }
+.post-meta, .muted { color:#777; font-size:13px; }
+.post-content { white-space:pre-wrap; margin:10px 0; }
+.pagination { margin:14px 0; display:flex; gap:6px; flex-wrap:wrap; }
+.pagination a, .page-current { padding:5px 11px; border:1px solid #c9d1e0; border-radius:6px; background:#fff; font-size:14px; }
+.page-current { background:#1f7a6d; color:#fff; border-color:#1f7a6d; }
+.comment { border-bottom:1px solid #eef1f6; padding:10px 0; } .comment:last-child { border-bottom:none; }
+.actions { display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-top:10px; }
+.footer { text-align:center; color:#888; font-size:13px; padding:18px 0 26px; }
+.stat-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:16px; }
+.stat { text-align:center; margin-bottom:0; } .stat-num { display:block; font-size:30px; font-weight:bold; color:#20504a; }
+@media (max-width:700px){ .stat-grid{grid-template-columns:repeat(2,1fr);} }
